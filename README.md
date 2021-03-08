@@ -5,4 +5,5 @@ The goal of this project is to build a final pipeline based on the ONTrack that 
 flowchart:
 
 
-![flowchart](https://user-images.githubusercontent.com/80257780/110318682-14b16680-800e-11eb-9ee4-73b5e761f367.png)
+![flowchart](![image](https://user-images.githubusercontent.com/80203184/110319426-28110180-800f-11eb-8586-4d9b7006c25f.png)
+)
