@@ -1,0 +1,7 @@
+basecalling: Guppy
+quality filtering: Qcat
+sequence allignment: T-Coffee
+consensus: CONNET
+mapping tool: MrFast/MrsFast
+species identfification: Anacapa
+data visualization: Phinch 
