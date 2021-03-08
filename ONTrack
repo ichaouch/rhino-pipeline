@@ -1,1 +1,7 @@
-
+basecalling: Guppy
+quality filtering: Vsearch
+sequence allignment: seqtk
+consensus: Emboss cons + MAFT
+mapping tool: MrFast/MrsFast
+species identfification: Anacapa
+data visualization: Phinch 
