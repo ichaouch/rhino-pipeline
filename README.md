@@ -9,8 +9,11 @@ flowchart:
 
 
 Follow the installation steps from these 3 githubs:
+
 https://github.com/MaestSi/ONTrack
+
 https://github.com/DerrickWood/kraken2
+
 https://github.com/marbl/Krona/tree/master/KronaTools
 
 
