@@ -26,6 +26,7 @@ Nanoplot is a tool for long read sequencing data and alignments. Nanoplot produc
 This command allows the user to create a statistical summary, a number of plots and a html summary file. The tool further allows adaptation to the users wishes, allowing variation in different parameters.
 
 The Nanoplot files and installation can be found at https://github.com/wdecoster/NanoPlot
+
 **ONTrack**
 
 The ONTRack pipeline is a rapid and accurate barcoding pipeline for tracking species biodiversity on site. The pipeline allows for a meta-barcoding analysis, with this script it is possible to achieve a more accurate consensus sequence. The **MetatONTrack.sh** script produces what the EPI2ME 16S workflow does, it blasts each read against an NCBI-downloaded database and afterwards it saves sets of the reads matchint the different species to seperate files. After this the **ONTrack.R** script is run to obtain a accurate consensus sequence. 
@@ -50,7 +51,7 @@ The Krona files and installation can be found at: https://github.com/marbl/Krona
 
 Before the implementation of the Pipeline a quality check took place using the Nanoplot which visualized the data quality and created a html summary file. Under **NanoPlot-report.html** a statistical summary can be found where the mean read quality is available.
 
-The ONTrack pipeline was implemented 
+The ONTrack pipeline was implemented after the quality check performed using the Nanoplot. Using the **MetatONTrack.sh** each read was matched against the NCBI-16S database, in turn these files were used in the **ONTrack.R** script in order to gain a consensus file. The consensus file was then used on the Kraken2 allowing for a species identification.
 
 
 # Citations
