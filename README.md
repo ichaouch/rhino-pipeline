@@ -51,7 +51,9 @@ The Krona files and installation can be found at: https://github.com/marbl/Krona
 
 Before the implementation of the Pipeline a quality check took place using the Nanoplot which visualized the data quality and created a html summary file. Under **NanoPlot-report.html** a statistical summary can be found where the mean read quality is available.
 
-The ONTrack pipeline was implemented after the quality check performed using the Nanoplot. Using the **MetatONTrack.sh** each read was matched against the NCBI-16S database, in turn these files were used in the **ONTrack.R** script in order to gain a consensus file. The consensus file was then used on the Kraken2 allowing for a species identification.
+The ONTrack pipeline was implemented after the quality check performed using the Nanoplot. Using the **MetatONTrack.sh** each read was matched against the NCBI-16S database, in turn these files were used in the **ONTrack.R** script in order to gain a consensus file. The consensus file was then used on the Kraken2 allowing for a species identification, this identification is available at **kraken identification.xlsx**. 
+
+Finally after the species identification the Krona tool is implemented in order to visualize the species identification, this interactive chart show the individual species present. This data is available in the 
 
 
 # Citations
