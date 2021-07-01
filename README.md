@@ -48,7 +48,9 @@ The Krona files and installation can be found at: https://github.com/marbl/Krona
 
 # Data
 
-Before the implementation of the Pipeline a quality check took place using the Nanoplot which visualized the data quality and created a html summary file. Under 
+Before the implementation of the Pipeline a quality check took place using the Nanoplot which visualized the data quality and created a html summary file. Under **NanoPlot-report.html** a statistical summary can be found where the mean read quality is available.
+
+The ONTrack pipeline was implemented 
 
 
 # Citations
