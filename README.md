@@ -53,7 +53,7 @@ Before the implementation of the Pipeline a quality check took place using the N
 
 The ONTrack pipeline was implemented after the quality check performed using the Nanoplot. Using the **MetatONTrack.sh** each read was matched against the NCBI-16S database, in turn these files were used in the **ONTrack.R** script in order to gain a consensus file. The consensus file was then used on the Kraken2 allowing for a species identification, this identification is available at **kraken identification.xlsx**. 
 
-Finally after the species identification the Krona tool is implemented in order to visualize the species identification, this interactive chart show the individual species present. This data is available in the 
+Finally after the species identification the Krona tool is implemented in order to visualize the species identification, this interactive chart show the individual species present. This data is available in the **kraken.krona.html**.
 
 
 # Citations
