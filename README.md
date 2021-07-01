@@ -1,4 +1,4 @@
-# rhino-pipeline
+# Rhino-pipeline
 
 Dry-lab archive for the Rhinoceros project
 
