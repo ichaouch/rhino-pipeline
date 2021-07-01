@@ -9,20 +9,38 @@ This study was initiated in order to investigate if a pipeline could be created 
 
 The goal of this project is to build a final pipeline based on the ONTrack that will be able to analyze the data that is obtained through metabarcoding on faeces. 
 
-**flowchart**
+**Flowchart**
 
 
 ![Flowchart BI V6 (1)](https://user-images.githubusercontent.com/80203184/122371937-8def1c80-cf60-11eb-8b15-9c78912c149a.png)
 
+**Method**
+The workings of the rhino pipeline use a variation of tool to achieve a species identification and visualizations
+
+**ONTrack**
+The ONTrack pipeline is a rapid and accurate barcoding pipeline for tracking species biodiversity on site. The pipeline allows for a meta-barcoding analysis, with this script it is possible to achieve a more accurate consensus sequence. The **MetatONTrack.sh** script produces what the EPI2ME 16S workflow does, it blasts each read against an NCBI-downloaded database and afterwards it saves sets of the reads matchint the different species to seperate files. After this the **ONTrack.R** script is run to obtain a accurate consensus sequence. 
+The ONTRack files can be found at: https://github.com/MaestSi/ONTrack
+
+**Kraken2**
+Kraken2 is a taxonomic sequence classifier that assigns taxonomic labels to DNA sequences. Kraken examines the K-mers within a query sequence and uses the information within those K-mers to query a database. In order to classify a set of sequences use the following command from Kraken2:
+`kraken2 --db $DBNAME seqs.fa`
+The output of this will be send to a standard output by default. Files containing the sequences that are to be classified should be specified on the command line. 
+The Kraken2 files and installation can be found at: https://github.com/DerrickWood/kraken2
+
+**Krona**
+Krona is a visualization tool that allows a new intuitive way to view relative abundances and confidences within a complex system of metagenomic classifications. Krona creates an interactive polar coordinated zooming which allows individual identifications to be more visually expressed, it does this in combination with coloring to distinguish itself. The Krona files and installation can be found at: https://github.com/marbl/Krona
+
+**Data**
 
 
-Follow the installation steps from these 3 githubs:
 
-https://github.com/MaestSi/ONTrack
 
-https://github.com/DerrickWood/kraken2
+**Citations**
+Maestri S, Cosentino E, Paterno M, Freitag H, Garces JM, Marcolungo L, Alfano M, Njunjić I, Schilthuizen M, Slik F, Menegon M, Rossato M, Delledonne M. A Rapid and Accurate MinION-Based Workflow for Tracking Species Biodiversity in the Field. Genes. 2019; 10(6):468.
 
-https://github.com/marbl/Krona/tree/master/KronaTools
+Wood, D.E., Lu, J. & Langmead, B. Improved metagenomic analysis with Kraken 2. Genome Biol 20, 257 (2019). https://doi.org/10.1186/s13059-019-1891-0
+
+Ondov BD, Bergman NH, and Phillippy AM. Interactive metagenomic visualization in a Web browser. BMC Bioinformatics. 2011 Sep 30; 12(1):385.
 
 
 
