@@ -17,6 +17,15 @@ The goal of this project is to build a final pipeline based on the ONTrack that 
 # Method
 The workings of the rhino pipeline use a variation of tool to achieve a species identification and visualizations
 
+**Nanoplot**
+
+Nanoplot is a tool for long read sequencing data and alignments. Nanoplot produces informative QC graphs which display multiple aspects of sequencing data and accept input data in fastq or fasta format. These graphs containg length histograms, cumulative yied plots, violin plots of read length and quality over time. Nanoplot starts with a usage command:
+
+`NanoPlot [-h] [-v] [-t THREADS] [--verbose] [--store] [--raw]`
+
+This command allows the user to create a statistical summary, a number of plots and a html summary file. The tool further allows adaptation to the users wishes, allowing variation in different parameters.
+
+The Nanoplot files and installation can be found at https://github.com/wdecoster/NanoPlot
 **ONTrack**
 
 The ONTRack pipeline is a rapid and accurate barcoding pipeline for tracking species biodiversity on site. The pipeline allows for a meta-barcoding analysis, with this script it is possible to achieve a more accurate consensus sequence. The **MetatONTrack.sh** script produces what the EPI2ME 16S workflow does, it blasts each read against an NCBI-downloaded database and afterwards it saves sets of the reads matchint the different species to seperate files. After this the **ONTrack.R** script is run to obtain a accurate consensus sequence. 
@@ -39,10 +48,13 @@ The Krona files and installation can be found at: https://github.com/marbl/Krona
 
 # Data
 
-
+Before the implementation of the Pipeline a quality check took place using the Nanoplot which visualized the data quality and created a html summary file. Under 
 
 
 # Citations
+
+Wouter De Coster, Svenn D’Hert, Darrin T Schultz, Marc Cruts, Christine Van Broeckhoven, NanoPack: visualizing and processing long-read sequencing data, Bioinformatics, Volume 34, Issue 15, 01 August 2018, Pages 2666–2669, https://doi.org/10.1093/bioinformatics/bty149
+
 Maestri S, Cosentino E, Paterno M, Freitag H, Garces JM, Marcolungo L, Alfano M, Njunjić I, Schilthuizen M, Slik F, Menegon M, Rossato M, Delledonne M. A Rapid and Accurate MinION-Based Workflow for Tracking Species Biodiversity in the Field. Genes. 2019; 10(6):468.
 
 Wood, D.E., Lu, J. & Langmead, B. Improved metagenomic analysis with Kraken 2. Genome Biol 20, 257 (2019). https://doi.org/10.1186/s13059-019-1891-0
