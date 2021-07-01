@@ -9,12 +9,12 @@ This study was initiated in order to investigate if a pipeline could be created 
 
 The goal of this project is to build a final pipeline based on the ONTrack that will be able to analyze the data that is obtained through metabarcoding on faeces. 
 
-**Flowchart**
+# Flowchart
 
 
 ![Flowchart BI V6 (1)](https://user-images.githubusercontent.com/80203184/122371937-8def1c80-cf60-11eb-8b15-9c78912c149a.png)
 
-**Method**
+# Method
 The workings of the rhino pipeline use a variation of tool to achieve a species identification and visualizations
 
 **ONTrack**
@@ -30,12 +30,12 @@ The Kraken2 files and installation can be found at: https://github.com/DerrickWo
 **Krona**
 Krona is a visualization tool that allows a new intuitive way to view relative abundances and confidences within a complex system of metagenomic classifications. Krona creates an interactive polar coordinated zooming which allows individual identifications to be more visually expressed, it does this in combination with coloring to distinguish itself. The Krona files and installation can be found at: https://github.com/marbl/Krona
 
-**Data**
+# Data**
 
 
 
 
-**Citations**
+# Citations
 Maestri S, Cosentino E, Paterno M, Freitag H, Garces JM, Marcolungo L, Alfano M, Njunjić I, Schilthuizen M, Slik F, Menegon M, Rossato M, Delledonne M. A Rapid and Accurate MinION-Based Workflow for Tracking Species Biodiversity in the Field. Genes. 2019; 10(6):468.
 
 Wood, D.E., Lu, J. & Langmead, B. Improved metagenomic analysis with Kraken 2. Genome Biol 20, 257 (2019). https://doi.org/10.1186/s13059-019-1891-0
