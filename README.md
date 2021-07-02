@@ -47,6 +47,34 @@ Krona is a visualization tool that allows a new intuitive way to view relative a
 
 The Krona files and installation can be found at: https://github.com/marbl/Krona
 
+**Filtlong**
+Filtlong is a tool that is used to filter long reads by quality. It can take a set of long reads and produce a smaller, better subset. This is done by using both read length and read identity when choosing which reads pass its filter. After installation of the tool executing the command:
+
+`filtlong --min_length 1000 --keep_percent 90 --target_bases 500000000 input.fastq.gz | gzip > output.fastq.gz` 
+
+This allows the user to filter their file without the need for an external reference. The filter can be altered to each users wishes and parameters. 
+
+The Filtlong files and istallation can be found at: https://github.com/rrwick/Filtlong
+
+**Seqtk**
+
+Seqtk is a fast tool for processing sequences in the FASTA or FASTQ format, it allows the user to trim low quality bases to create a more acurrate genome. Seqtk has a variatie of command to work with its users wishes and parameters. 
+
+The Seqtk files and instillation can be found at: https://github.com/lh3/seqtk
+
+**CONNET**
+
+Connet is a tool used in order to achieve the highest accuracty from any concensus tool, the creators dicovered that the spatialrelationship of alignment pileup is crucial to hight quality concensus. In addition to achieving high quality consensus results, CONNET is also able to deliver phased diploid genome concensus. The tool uses pre made models in order to use a correction phase and a recovery phase. Using the command: 
+
+`# haploid consensus
+mkdir new_experiment
+cd new_experiment
+python2 $CONNET model1 model2 raw_reads.fa draft_assembly.fa`
+
+The user can create an accurate concensus if they posses the correct models for the correction and recovery phase. 
+
+The CONNET files and instillation can be found at: https://github.com/HKU-BAL/CONNET
+
 # Data
 
 Before the implementation of the Pipeline a quality check took place using the Nanoplot which visualized the data quality and created a html summary file. Under **NanoPlot-report.html** a statistical summary can be found where the mean read quality is available.
@@ -66,6 +94,11 @@ Wood, D.E., Lu, J. & Langmead, B. Improved metagenomic analysis with Kraken 2. G
 
 Ondov BD, Bergman NH, and Phillippy AM. Interactive metagenomic visualization in a Web browser. BMC Bioinformatics. 2011 Sep 30; 12(1):385.
 
+Wick R. Filtlong, quality filtering tool for long reads. https://github.com/rrwick/Filtlong#acknowledgements
+(Filtlongs creator does not have a proper citation so he wished to be cited through github.)
 
+H. Li, Seqtk: a fast and lightweight tool for processing FASTA or FASTQ sequences, 2013. https://github.com/lh3/seqtk/issues/89
+(Seqtk creator does not have a proper citation so he wished to be cited through github.)
 
+Zhang Y, Liu CM, Leung HCM, Luo R, Lam TW. CONNET: Accurate Genome Consensus in Assembling Nanopore Sequencing Data via Deep Learning. iScience. 2020 May 22;23(5):101128. doi: 10.1016/j.isci.2020.101128. Epub 2020 May 1. PMID: 32422594; PMCID: PMC7229283.
 
