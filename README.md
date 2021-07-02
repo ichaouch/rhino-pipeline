@@ -99,10 +99,10 @@ Wood, D.E., Lu, J. & Langmead, B. Improved metagenomic analysis with Kraken 2. G
 
 Ondov BD, Bergman NH, and Phillippy AM. Interactive metagenomic visualization in a Web browser. BMC Bioinformatics. 2011 Sep 30; 12(1):385.
 
-Wick R. Filtlong, quality filtering tool for long reads. https://github.com/rrwick/Filtlong#acknowledgements
+Wick R. Filtlong, quality filtering tool for long reads. https://github.com/rrwick/Filtlong
 (Filtlongs creator does not have a proper citation so he wished to be cited through github.)
 
-H. Li, Seqtk: a fast and lightweight tool for processing FASTA or FASTQ sequences, 2013. https://github.com/lh3/seqtk/issues/89
+H. Li, Seqtk: a fast and lightweight tool for processing FASTA or FASTQ sequences, 2013. https://github.com/lh3/seqtk
 (Seqtk creator does not have a proper citation so he wished to be cited through github.)
 
 Zhang Y, Liu CM, Leung HCM, Luo R, Lam TW. CONNET: Accurate Genome Consensus in Assembling Nanopore Sequencing Data via Deep Learning. iScience. 2020 May 22;23(5):101128. doi: 10.1016/j.isci.2020.101128. Epub 2020 May 1. PMID: 32422594; PMCID: PMC7229283.
