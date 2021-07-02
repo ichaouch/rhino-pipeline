@@ -11,8 +11,8 @@ The goal of this project is to build a final pipeline based on the ONTrack that 
 
 # Flowchart
 
+![image](https://user-images.githubusercontent.com/80203184/124269564-51641900-db3b-11eb-8999-e6ce08ad6729.png)
 
-![Flowchart BI V6 (1)](https://user-images.githubusercontent.com/80203184/122371937-8def1c80-cf60-11eb-8b15-9c78912c149a.png)
 
 # Method
 The workings of the rhino pipeline use a variation of tool to achieve a species identification and visualizations
