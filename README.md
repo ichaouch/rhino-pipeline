@@ -83,6 +83,11 @@ The ONTrack pipeline was implemented after the quality check performed using the
 
 Finally after the species identification the Krona tool is implemented in order to visualize the species identification, this interactive chart show the individual species present. This data is available in the **kraken.krona.html**.
 
+When creating the new pipline which would use the Filtlong, seqtk and CONNET tools a problem occured. Even thought the Filtlong worked using the'command:
+
+`filtlong --min_length 1000 --keep_percent 90 --target_bases 500000000 input.fastq.gz | gzip > output.fastq.gz`
+
+and Seqtk was used for sequence allignment, it was not able to propely use the CONNET tool. This is deu to the CONNET tool needing 2 models, one for recovery and one for the recovery phase. The only models provided within the CONNET were for E. coli and H. sapiens, since neither of these were being researched it was not possible to use these models. This would mean that in order to use the CONNET tool, models would have to be made for te species that are being searched. 
 
 # Citations
 
